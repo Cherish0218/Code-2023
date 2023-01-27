@@ -1,0 +1,51 @@
+<!--2023/1/26-->
+<!--
+
+    内容概括
+    html的基本框架是head、body都嵌套在html内
+    属性有两种，一种是基本属性，可以改变基本的一些外观
+    还有一种是事件属性，可以设置响应事件后的代码
+    bgcolor代表的是背景颜色
+    onclick代表的是单击事件
+    
+    用到的一些控件有：
+    font（字体标签）、button（按钮）、br（换行）、hr（下划线）
+
+-->
+
+<!DOCTYPE html>  <!--约束及声明-->
+<html lang="zh_CN"><!--html标签标识html的开始，  zh_CN表示中文，  html中一般分为两部分，分别是head和body-->
+<head><!-- head表示头部信息，一般包括三部分内容，title标签，css样式，js代码  -->
+    <meta charset="UTF-8"> <!--表示当前页面使用utf-8字符集 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--表示标题-->
+</head>
+
+<!--
+    bgcolor代表的是背景颜色
+    onclick代表的是单击事件
+
+    alert()是javascript提供的一个警告框函数
+    他可以接收任意参数，参数就是警告框信息
+
+-->
+
+<body bgcolor = "red">  <!--是整个html界面的主体显示内容-->
+    hello world <br/>嘿嘿
+    <button onclick="alert('哈哈')">点击</button>
+    <hr/>
+
+    <!--font是字体标签，可以修改字体的颜色，大小，字体等-->
+    <font color = "red" size = "7" face = "黑体">字体测试区</font>
+
+    <hr/>
+
+</body>
+</html>
+
+<!--标签名的大小写是不敏感的-->
+<!--标签拥有自己的属性-->
+<!--分为基本属性 bgcolor = "red"   可以修改简单的界面效果   -->
+<!--以及事件属性 onclick = "alert(‘你好’)"  可以设置响应事件后的代码  -->
+
