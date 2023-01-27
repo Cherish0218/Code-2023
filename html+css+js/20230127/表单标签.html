@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- 重点 -->
+    <!-- 
+        什么是表单？
+        表单就是html页面中，用来收集用户信息的元素集合，然后把这些元素发送给服务器
+     -->
+
+     <!-- form标签 -->
+     <!-- 
+        input type = "text"     文本输入框 value 可以显示默认值
+        input type = "password" 密码输入框 value可以显示默认值
+        input type = "radio"    单选框，可以用name来建组
+        input type = "checkbox" 多选框 checked = "checked" 可以表示默认选中
+        input type = "reset"    重置按钮 value 可以设置默认内容
+        input type = "submit"   提交按钮
+        input type = "button"   按钮 value 可以设置内容
+        input type = "file"     文件上传提交 
+        input type = "hidden"   隐藏域 当我们要发送某些信息，而这些信息不需要用户看见和参与，就可以使用隐藏域（提交的时候发送给服务器）
+
+        select 标签是下拉列表框
+        option 标签是下拉列表框中的选项 selected = "selected" 表示默认选中
+        
+        textarea 表示多行文本输入框（起始标签和结束标签中的内容是默认值）
+            rows 属性和值可以显示多少行
+            cols 属性设置可以显示多少个字符宽度
+    
+        
+    -->
+     <form >
+        用户名称： <input type="text" value = "默认值"><br>
+        用户密码： <input type="password" ><br>
+        确认密码： <input type="password" ><br>
+        性别：    <input type="radio" name="sex" checked = "checked">男 <input type="radio" name="sex">女<br>
+        兴趣爱好: <input type="checkbox" checked = "checked" />Java <input type="checkbox">C++ <br>
+        国籍：<select>
+            <option >请选择国籍</option>
+            <option selected = "selected">中国</option>
+            <option >日本</option>
+        </select> <br>
+        自我评价： <textarea rows = "10" cols="20">我是默认值</textarea>
+        <input type="reset" value="Yes reset">
+    </form>
+</body>
+</html>
