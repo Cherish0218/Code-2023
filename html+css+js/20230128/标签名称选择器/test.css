@@ -1,0 +1,15 @@
+div{
+    border: 1px solid yellow;
+    /*设置字体颜色*/
+    color: blue;
+    /*设置字体大小*/
+    font-size: 30px;
+}
+
+span{
+    border: 5px blue dashed;
+    /*设置字体颜色*/
+    color: yellow;
+    /*设置字体大小*/
+    font-size: 30px;
+}
